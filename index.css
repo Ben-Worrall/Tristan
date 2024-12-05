@@ -1,0 +1,364 @@
+body
+{
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+#HighScore{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    font-size: 160%;
+}
+#Score{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    margin-top: 4%;
+    font-size: 160%;
+}
+.FirstButton{
+    background-color: black;
+    color: white;
+    border: 0.25vh solid white;
+    float: left;
+    width: 55%;
+    font-size: 200%;
+}
+.FirstButton:hover{
+   cursor: pointer;
+   color: rgb(168, 168, 100);
+}
+#Title{
+    font-size: 300%;
+    color: white;
+    width: 100%;
+    height: 10%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+#ButtonsHolder{
+    position: absolute;
+    float: left;
+    height: 10%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#CharacterBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1011;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#CharacterHolder{
+    position: absolute;
+    outline: solid white 0.1vh;
+    width: 30%;
+    height: 20%;
+    background-color: black;
+    top: 40%;
+    z-index: 1012;
+    overflow: hidden;
+}
+.CharacterButtonLeftOrRight{
+    width: 10%;
+    float: left;
+    height: 100%;
+    background-color: black;
+    border: 0;
+    color: white;
+    outline: 0.2vh solid white;
+    z-index: 1011;
+}
+#CharactersSelection{
+    width: 80%;
+    float: left;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: none;
+    display: flex;
+    align-items: center;
+}
+#CharactersSelection::-webkit-scrollbar {
+    display: none;
+  }
+.CharacterImgSelect{
+    width: 40%;
+    height: 70%;
+    float: left;
+    
+}
+
+
+
+
+
+#Arrow-Keys{
+    position: absolute;
+    width: 12.5%;
+    height: 27.5%;
+    bottom: 0;
+    right: 0;
+    margin: 0%;
+}
+
+
+
+#Game-Canvas{
+    width: 70vw;
+    height: 70vh;
+    background-color: black;
+    outline: 0.1vh solid white;
+    position: absolute;
+    margin-top: 15vh;
+    z-index: 1013;
+    overflow: hidden;
+}
+
+#Character{
+    z-index: 1010;
+    position: absolute;
+ width: 10vh;
+ height: 12vh;
+ outline: solid rgba(255, 255, 255, 0.1) 0.1vh;
+ background-color: rgba(0, 0, 0, 0);
+ bottom: 0;
+ margin-bottom: 0.1vh;
+ left: 45%;
+}
+#GameCharacter{
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+#MovingElement000{
+    position: absolute;
+    height: 40%;
+    width: 7%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 0%;
+    clip-path: polygon(23% 1%, 25% 39%, 26% 81%, 27% 93%, 34% 99%, 57% 78%, 67% 52%, 69% 33%, 69% 23%, 48% 11%, 46% 1%);
+     animation: MovingEl000 infinite 25s ;
+    
+}
+
+@keyframes MovingEl000{
+    0% {
+        top: -25vh;
+    }
+    100%{
+        top: 90vh;
+       
+    }
+
+}
+
+#MovingElement00{
+    position: absolute;
+    height: 40%;
+    width: 7%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 7%;
+    clip-path: polygon(23% 1%, 25% 39%, 26% 81%, 27% 93%, 34% 99%, 57% 78%, 67% 52%, 69% 33%, 69% 23%, 48% 11%, 46% 1%);
+
+    
+}
+
+@keyframes MovingEl00{
+    0% {
+        top: -25vh;
+    }
+    100%{
+        top: 90vh;
+       
+    }
+
+}
+#MovingElement0{
+    position: absolute;
+    height: 20%;
+    width: 7%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 20%;
+    clip-path: polygon(36% 100%, 36% 88%, 39% 84%, 39% 35%, 16% 31%, 12% 3%, 13% 0%, 80% 0%, 83% 0%, 84% 0%, 84% 0%, 86% 0%, 88% 0%, 85% 31%, 69% 37%, 62% 83%, 67% 89%, 67% 99%);
+
+
+
+
+}
+
+@keyframes MovingEl0{
+    0% {
+        top: -10vh;
+    }
+    100%{
+        top: 80vh;
+       
+    }
+
+}
+
+#MovingElement1{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 35.5%;
+    clip-path: polygon(57% 5%, 72% 9%, 92% 16%, 93% 56%, 23% 48%, 23% 100%, 6% 100%, 6% 37%, 6% 0, 32% 2%);
+}
+
+@keyframes MovingEl1{
+    0% {
+        top: -5vh;
+    }
+    100%{
+        top: 90vh;
+       
+    }
+
+}
+#MovingElement2{
+    position: absolute;
+    height: 40%;
+    width: 7%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 52%;
+    clip-path: polygon(23% 1%, 25% 39%, 26% 81%, 27% 93%, 34% 99%, 57% 78%, 67% 52%, 69% 33%, 69% 23%, 48% 11%, 46% 1%);
+}
+
+@keyframes MovingEl2{
+    0% {
+        top: -15vh;
+    }
+    100%{
+        top: 100vh;
+       
+    }
+
+}
+#MovingElement3{
+    position: absolute;
+    height: 25%;
+    width: 10%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 68%;
+    clip-path: polygon(64% 0, 69% 20%, 96% 32%, 96% 94%, 79% 100%, 25% 100%, 2% 95%, 3% 31%, 30% 18%, 33% 0);
+}
+
+@keyframes MovingEl3{
+    0% {
+        top: -5vh;
+    }
+    100%{
+        top: 75vh;
+       
+    }
+
+}
+#MovingElement4{
+    position: absolute;
+    height: 30%;
+    width: 10%;
+    outline: solid white 0.1vh;
+    top: -1vh;
+    left: 85%;
+    clip-path: polygon(36% 100%, 36% 88%, 39% 84%, 39% 35%, 16% 31%, 12% 3%, 13% 0%, 80% 0%, 83% 0%, 84% 0%, 84% 0%, 86% 0%, 88% 0%, 85% 31%, 69% 37%, 62% 83%, 67% 89%, 67% 99%);
+}
+
+@keyframes MovingEl4{
+    0% {
+        top: -25vh;
+    }
+    100%{
+        top: 95vh;
+       
+    }
+
+}
+
+.DodgeEl{
+    width: 100%;
+    height: 100%;
+}
+
+
+#EndScreen-Holder{
+    width: 50vw;
+    height: 75vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10vh;
+    outline: solid white 0.1vh;
+
+}
+#EndScreenImage{
+    width: 100%;
+    height: 90%;
+    float: left;
+}
+
+#EndScreenIMG{
+
+    height: 100%;
+    width: 100%;
+}
+
+#EndScreenButtons{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+.EndButtons{
+    color: white;
+    background-color: black;
+    outline: solid white 0.1vh;
+    font-size: 225%;
+    margin: 5%;
+}
+.EndButtons:hover{
+    cursor: pointer;
+    color: rgb(168, 168, 100);
+}

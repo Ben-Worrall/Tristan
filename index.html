@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Don't Let Him Die</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+    <!--First screen-->
+
+    <div id="Title">DON'T LET THE POTATO DIE</div>
+
+    <div id="HighScore">High Score: 0</div>
+    <div id="Score" style="display: none;">Score: <div id="NewScore" style="float: right;">0</div></div>
+
+    <div id="ButtonsHolder">
+        <button class="FirstButton" id="StartGameBNT">Start Game</button>
+        <button class="FirstButton" id="ChooseCharacterBNT">Choose Character</button>
+
+    </div>
+
+
+    <!--select characters-->
+
+    <div id="CharacterBackground" style="display: none;"></div>
+    <div id="CharacterHolder" style="display: none;">
+        <button class="CharacterButtonLeftOrRight" id="SelectCharacterLeft"><</button>
+        <div id="CharactersSelection">
+            <img class="CharacterImgSelect" src="./assets/Character1.png" alt="./assets/Character1.png" style="outline: solid white 0.1vh">
+            <img class="CharacterImgSelect" src="./assets/Character2.png" alt="./assets/Character2.png">
+            <img class="CharacterImgSelect" src="./assets/Character4.png" alt="./assets/Character4.png">
+            <img class="CharacterImgSelect" src="./assets/Character5.png" alt="./assets/Character5.png">
+            <img class="CharacterImgSelect" src="./assets/Character6.png" alt="./assets/Character6.png">
+            
+        </div>
+        <button class="CharacterButtonLeftOrRight" id="SelectCharacterRight">></button>
+    </div>
+
+
+
+
+    <!--Play the game-->
+    <div id="Game-Canvas" style="display: none;">
+
+        
+        <div id="Character">
+            <img id="GameCharacter">
+        </div>
+
+
+        <div id="MovingElement000"><img src="./assets/knife.png" class="DodgeEl"></div>
+        <div id="MovingElement00"><img src="./assets/knife.png" class="DodgeEl"></div>
+        <div id="MovingElement0"><img src="./assets/peeler.png" class="DodgeEl"></div>
+        <div id="MovingElement1"><img src="./assets/irish.png" class="DodgeEl"></div>
+        <div id="MovingElement2"><img src="./assets/knife.png" class="DodgeEl"></div>
+        <div id="MovingElement3"><img src="./assets/oil.png" class="DodgeEl"></div>
+        <div id="MovingElement4"><img src="./assets/peeler.png" class="DodgeEl"></div>
+        
+        
+
+    </div>
+    
+
+    <img src="./assets/arrow-keys.png" id="Arrow-Keys" style="display: none;">
+
+
+    <!--End Screen-->
+    <div id="EndScreen-Holder" style="display: none;">
+
+        <div id="EndScreenImage">
+            <img id="EndScreenIMG" src="./assets/end-screen.png">
+        </div>
+
+        <div id="EndScreenButtons">
+            <button id="RestartBNT" class="EndButtons">RESTART</button>
+            <button id="HomeScreenBNT" class="EndButtons">HOME SCREEN</button>
+        </div>
+
+        
+
+    </div>
+
+
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
