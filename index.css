@@ -156,6 +156,7 @@ body
  bottom: 0;
  margin-bottom: 0.1vh;
  left: 45%;
+ clip-path: polygon(51% 3%, 91% 9%, 97% 40%, 98% 69%, 87% 100%, 50% 100%, 16% 100%, 3% 70%, 3% 44%, 10% 9%);
 }
 #GameCharacter{
  width: 100%;
