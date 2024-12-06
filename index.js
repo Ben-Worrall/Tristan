@@ -237,7 +237,7 @@ document.addEventListener('keydown', (event) => {
 
 // Usage
 const targetElement = document.querySelector('#Character');
-const otherElements = document.querySelectorAll('.DodgeEl');
+const otherElements = document.querySelectorAll('.ColBox');
 
 function isNotTouching(target, elements) {
   const targetRect = target.getBoundingClientRect();
